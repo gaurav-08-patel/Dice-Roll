@@ -1,0 +1,40 @@
+.rules_container {
+    margin: 50px auto 10px auto;
+    padding: 15px;
+    min-width:450px;
+    width: 60%;
+    background-color: #fbf1f1;
+    overflow: hidden;
+    /* transition: all 0.3s; */
+}
+
+.rules_container h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.rules_container ul li {
+    list-style-type: disc;
+    margin: 5px 0;
+    font-weight: 500;
+}
+
+@media (max-width: 420px) {
+
+    .rules_container{
+        min-width: 340px;
+    }
+    .rules_container h1 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 12px;
+    }
+
+    .rules_container ul li {
+        font-size: 15px;
+        list-style-type: disc;
+        margin: 5px 0;
+        font-weight: 500;
+    }
+}

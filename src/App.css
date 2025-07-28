@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+body {
+  font-family: poppins;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.landing-page{
+  /* background-color: aliceblue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+
+
+.landing-page div{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-end; */
+  align-items: flex-end;
+  /* background-color: beige; */
+}
+
+.landing-page div h1{
+  font-size: 95px;
+  font-weight: 600;
+}
+
+.game_page{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.game_page header{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+  /* background-color: aqua; */
+}
+
+.game_page main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aliceblue; */
+}
+
+.error_msg{
+  position: absolute;
+  top: 32px;
+  right: 0;
+  color: #FF0C0C;
+}
+
+#values{
+  display: flex;
+  gap: 10px;
+}
+
+.user_input{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+.user_input label{
+  font-weight:500 ;
+}
+
+.dice_container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dice_container label{
+  text-align: center;
+  font-weight: 500;
+}
+
+@media (max-width:1200px){
+  
+  .landing-page img{
+    width: 400px;
+  }
+  .landing-page div  h1{
+    font-size: 80px;
+  }
+
+}
+@media (max-width:900px){
+  
+  .landing-page img{
+    width: 350px;
+  }
+  .landing-page div  h1{
+    font-size: 60px;
+  }
+
+}
+@media (max-width:720px){
+  .landing-page {
+    /* background-color: #FF0C0C; */
+    flex-direction: column;
+    gap: 20px;
+  }
+  .landing-page img{
+    width: 350px;
+  }
+  .landing-page div  h1{
+    font-size: 60px;
+  }
+
+}
+@media (max-width:420px){
+  .user_input{
+    gap: 5px;
+  }
+
+  .user_input label{
+    font-size: 14px;
+  }
+
+  .error_msg{
+    font-size: 14px;
+  }
+
+}
+
