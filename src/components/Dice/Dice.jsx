@@ -4,7 +4,7 @@ import { useContext, useState } from "react";
 
 const Dice = () => {
     let [diceImgSrc, setDiceImgSrc] = useState(
-        "../../../public/img/dice_2.png"
+        "/img/dice_2.png"
     );
     // let diceNum=0;
     let diceNum;
@@ -20,7 +20,7 @@ const Dice = () => {
         } else {
             diceNum = randomNum() + 1;
 
-            setDiceImgSrc(`../../../public/img/dice_${diceNum}.png`);
+            setDiceImgSrc(`/img/dice_${diceNum}.png`);
             clacScore(diceNum);
         }
     };

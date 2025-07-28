@@ -6,7 +6,7 @@ const LandingPage = () => {
     return (
         <main className="container landing-page">
             <img
-                src="../../public/img/landing_dices.png"
+                src="/img/landing_dices.png"
                 alt="dices"
                 className="dices"
             />
